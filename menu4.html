@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Jungle</title>
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+}
+#menu{
+	width:90%;
+	margin:25px auto;
+}
+#menu ul{
+	list-style:none;
+}
+#menu li{
+	display:block;
+	float:left;
+}
+#menu li a{
+	background:#979797 url(images/menu_bg.gif) repeat-x;
+	border:2px solid #939393;
+	margin:0 1px;
+	padding:15px 15px 15px 15px;
+	display:block;
+	float:left;
+	color:#fff;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	height: 50px;
+}
+#menu li a span{
+	color:#636363;
+	font-size:10px;
+	text-transform:lowercase;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-weight:normal;
+}
+#menu li a:hover{
+	background:#e46825 url(images/menu_hover.gif) repeat-x;
+	border:2px solid #939393;
+	text-decoration:none;
+}
+#menu li a:hover span{
+	color:#636363;
+}
+.current{
+	background:#bcbcbc url(images/menu_hover.gif) repeat-x;
+	border:2px solid #aeaeae;
+	margin:0 1px;
+	padding:15px 15px 15px 15px;
+	display:block;
+	float:left;
+	color:#fff;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:13px;
+	cursor:pointer;
+	font-weight:bold;
+	height: 50px;
+}
+.current span{
+	color:#636363;
+	font-size:10px;
+	text-transform:lowercase;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-weight:normal;
+}
+
+#submenu{
+		
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div>
+	<ul id="menu">
+   		<li><a href="#">Contact Us</a></li>
+		<li><a href="#">Bryant</a></li>
+		<li><a href="#">Products</a>
+       		<ul id="submenu">
+        		<li><a href="#">furnaces</a></li>
+        		<li><a href="#">air conditioners</a></li>
+		        <li><a href="#">heat pumps</a></li>
+                <li><a href="#">geothermal</a></li>
+                <li><a href="#">hybrid heat</a></li>
+                <li><a href="#">boilers/radiant</a></li>
+                <li><a href="#">indoor air quality</a></li>
+                <li><a href="#">ventilation</a></li>
+                <li><a href="#">misc</a></li>
+        	</ul>
+        </li>
+		<li><a href="#">About Us</a></li>
+   		<li><a href="#" class="current">Home</a></li>
+	</ul>
+</div>
+
+</body>
+</html>

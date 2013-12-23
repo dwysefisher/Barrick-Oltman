@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html><head><title>CSS Pop Up Menu 2 - Horizontal Menus - Example 4</title> 
+ 
+    
+        
+		
+		<style type="text/css"> 
+			* {
+				padding: 0;
+				margin: 0;
+				font-family: Arial, sans-serif;
+			}
+			
+			body {
+				margin: 20px;
+				font-size: 12px;
+			}
+			
+			body {
+				behavior: url(csshover.htc);
+			}
+ 
+			ul {
+				list-style: none;
+			}
+ 
+			ul a {
+				color: #FFF;
+				text-decoration: none;
+				display: block;
+				padding: 5px 5px 5px 10px;
+				width: 125px;
+				background: #333;
+				background: #CC9;
+			}
+			
+			ul a:hover {
+				color: #4BD8FF;
+				text-decoration: none;
+				background: #3C3C3C;
+				
+			}
+			
+			ul li {
+				border-bottom: 1px solid #FFF;
+				border-right: 1px solid #FFF;
+				float: left;
+				position: relative;
+				
+			}
+			
+			ul li ul {
+				list-style: none;
+				position: absolute;
+				left: 0;
+				top: 100%;
+				display: none;
+				width: 125px;
+				border-top: 1px solid #FFF;
+
+			}
+			
+			ul li:hover ul { 
+			display: block;
+
+			 }
+			
+			ul li:hover ul li ul { display: none; }
+			
+			ul li ul li:hover ul {
+				display: block;
+				position: absolute;
+				left: 140px;
+				top: -1px;
+				border-left: 1px solid #FFF;
+								
+
+			}
+		</style></head><body> 
+		
+		<ul id="menu">
+   		<li><a href="#">Contact Us</a></li>
+		<li><a href="#">Bryant</a></li>
+		<li><a href="#">Products</a>
+       		<ul>
+        		<li><a href="#">furnaces</a></li>
+        		<li><a href="#">air conditioners</a></li>
+		        <li><a href="#">heat pumps</a></li>
+                <li><a href="#">geothermal</a></li>
+                <li><a href="#">hybrid heat</a></li>
+                <li><a href="#">boilers/radiant</a></li>
+                <li><a href="#">indoor air quality</a></li>
+                <li><a href="#">ventilation</a></li>
+                <li><a href="#">misc</a></li>
+        	</ul>
+        </li>
+		<li><a href="#">About Us</a></li>
+   		<li><a href="#" class="current">Home</a></li>
+	</ul>
+ 
+	
+</body></html>
